@@ -1,7 +1,3 @@
-//Juhi Patel
-//jmp170130
-//CS 1337.007
-
 #include <fstream>
 #include <string>
 #include <cctype> //for isdigit
