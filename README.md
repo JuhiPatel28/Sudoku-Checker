@@ -2,9 +2,9 @@
 
 ## Skills Used
 - C++
-- File I/O and File pointers
+- File I/O and file pointers
 - 2D Array traversal using pointers
-- Problem Solving
+- Problem solving
 
 ## Description
 This program takes a file of one or more sudoku puzzles. The puzzles in the file consist of two components: name of the puzzle and the puzzle itself.
