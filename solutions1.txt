@@ -1,0 +1,3 @@
+842	valid
+1	solved
+2	invalid		multiple 8s in column 9
