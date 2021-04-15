@@ -1,6 +1,23 @@
-# SudokuChecker
+# Sudoku Checker
 
-a program that was able to take a document of sudoku puzzles and decide whether the puzzles
-presented were valid (there were no errors in the puzzle, but there were blank spaces), solved (the puzzle had no
-errors or blank spaces), and invalid (the puzzle had some problems and was not a valid sudoku puzzle). In addition, if
-the program decided a puzzle was invalid, it would list the reason why. For example: row 1 has multiple 7s.
+## Skills Used
+- C++
+- File I/O
+- 2d Array traversal using pointers
+- Problem Solving
+
+## Description
+This program takes a file of one or more sudoku puzzles. The puzzles in the file consist of two components: name of the puzzle and the puzzle itself.
+
+![alt text](https://github.com/JuhiPatel28/SudokuChecker/blob/main/Images/p1.png)
+
+The program itself takes these puzzles and decides whether the puzzles are
+- Solved: there are no no errors or blank spaces in the puzzle
+- Valid: there are no errors in the puzzle, but there are blank spaces
+- Invalid: the puzzle has one or more errors
+
+The program then outputs the puzzle name and validity. If the puzzle is determined to be invalid, the program will also detect and output the reason why it is invalid. 
+
+![alt text](https://github.com/JuhiPatel28/SudokuChecker/blob/main/Images/p2.png)
+
+![alt text](https://github.com/JuhiPatel28/SudokuChecker/blob/main/Images/p3.png)
