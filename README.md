@@ -3,7 +3,7 @@
 ## Skills Used
 - C++
 - File I/O
-- 2d Array traversal using pointers
+- 2D Array traversal using pointers
 - Problem Solving
 
 ## Description
