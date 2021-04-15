@@ -1,0 +1,6 @@
+123456789	valid
+9462		invalid		multiple 5s in row 3
+555		valid		
+8310		invalid		multiple 4s in lower right 3x3
+6		invalid		multiple 2s in column 2
+18		invalid		multiple 8s in column 9

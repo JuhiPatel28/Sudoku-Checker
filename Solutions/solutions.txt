@@ -1,0 +1,24 @@
+11	invalid		quadrant 1 has multiple 1s 
+22	Solved
+33	invalid		quadrant 4 has multiple 2s 
+44	Valid
+55	invalid		quadrant 5 has multiple 5s 
+66	invalid		row 7 has multiple 7s 
+11	invalid		Top left quadrent has multiple 1s 
+22	Solved
+33	invalid		Middle left quadrent has multiple 2s 
+44	Valid
+55	invalid		Middle middle quadrent has multiple 5s 
+66	invalid		row 7 has multiple 7s 
+11	invalid		Top left quadrent has multiple 1s 
+22	Solved
+33	invalid		Middle left quadrent has multiple 2s 
+44	Valid
+55	invalid		Middle middle quadrent has multiple 5s 
+66	invalid		row 7 has multiple 7s 
+11	invalid		Top left quadrent has multiple 1s 
+22	Solved
+33	invalid		Middle left quadrent has multiple 2s 
+44	Valid
+55	invalid		Middle middle quadrent has multiple 5s 
+66	invalid		row 7 has multiple 7s 
