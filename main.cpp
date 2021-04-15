@@ -1,3 +1,5 @@
+//Juhi Patel
+
 #include <fstream>
 #include <string>
 #include <cctype> //for isdigit
@@ -42,7 +44,7 @@ int main()
                         file.get();
                         continue;
                     }
-                    int temp = file.get(); //get chatacter
+                    int temp = file.get(); //get character
 
                     if(temp == -1 || temp == EOF) //check for end of file
                     {
@@ -66,7 +68,7 @@ int main()
             inf = file.tellg(); //get input file pointer location
             file.close(); //close input file
 
-            file.open("solutions.txt", ios::out | ios::in | ios::ate); //open output file at the end and so that it doesnt delete upon being reopened
+            file.open("solutions.txt", ios::out | ios::in | ios::ate); //open output file at the end and so that it doesn't delete upon being reopened
 
             int rowerr = 1; //row # 1 based
             for(int counter = 0; counter < row; counter++) //iterates for each row
@@ -87,7 +89,7 @@ int main()
                 int colerr = 1; //column # 1 based
                 for(int counter = 0; counter < column; counter++)
                 {
-                    int colerror = checkcolumn(ary, counter); //send double pointer and columnm to function
+                    int colerror = checkcolumn(ary, counter); //send double pointer and column to function
 
                     if(colerror != 0) //check for error
                     {
@@ -125,43 +127,43 @@ int main()
                             error = true; //set error flag
                             /* FIXING CODE ERRORS
                             old code:
-                            file << sudokuname << "\t" << "invalid" << "\t\t" << "quadrent " << quad << "has " << suberr << "s " << endl;
+                            file << sudokuname << "\t" << "invalid" << "\t\t" << "quadrant " << quad << "has " << suberr << "s " << endl;
                             */
                             if(quad == 1)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Top left quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Top left quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 2)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Top middle quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Top middle quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 3)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Top right quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Top right quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 4)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Middle left quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Middle left quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 5)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Middle middle quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Middle middle quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 6)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Middle left quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Middle left quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 7)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Bottom left quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Bottom left quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 8)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Bottom middle quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Bottom middle quadrant has multiple " << suberr << "s " << endl;
                             }
                             else if(quad == 9)
                             {
-                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Bottom right quadrent has multiple " << suberr << "s " << endl;
+                                file << sudokuname << "\t" << "invalid" << "\t\t" << "Bottom right quadrant has multiple " << suberr << "s " << endl;
                             }
                             break; //leave loop
                         }
@@ -170,7 +172,7 @@ int main()
                     /* FIXING CODE ERRORS */
                     if(error == true)
                     {
-                        break; //forgot to make it break out of 2nd loop after error is found
+                        break;
                     }
                 }
                 free(subsq); //free dynamic memory
@@ -180,11 +182,11 @@ int main()
 
             if(error != true && allnumbers == true) //checks flags
             {
-                file << sudokuname << "\t" << "Solved" << endl; //outputs appropraite msg
+                file << sudokuname << "\t" << "Solved" << endl; //outputs appropriate msg
             }
             else if(error != true) //checks flags
             {
-                file << sudokuname << "\t" << "Valid" << endl; //outputs appropraite msg
+                file << sudokuname << "\t" << "Valid" << endl; //outputs appropriate msg
             }
 
             file.close(); //close output file
@@ -205,7 +207,7 @@ int main()
 }
 
 
-int checkcolumn(int **ptr, int c) //column validator
+int checkcolumn(int **ptr, int c) //column validation
 {
     int **temp = ptr; //copy 1 of 2d pointer
     int **temp2 = ptr + 1; //copy 2 of 2d pointer moved up one index
@@ -257,7 +259,7 @@ int checkrow(int **ptr, int r) //row checker
             }
             ptr2++; //move second 1d pointer to next index in row
         }
-        ptr1++; //move first 1d pointer to next indecx in row
+        ptr1++; //move first 1d pointer to next index in row
         ptr2 = ptr1 + 1; //move second 1d pointer to one index after first 1d pointer
     }
     return 0; //return no error
@@ -283,7 +285,7 @@ int subsquare(int *ptr) //check subsquares
             }
             ptr2++; //move second pointer to next index
         }
-        ptr1++; //move first 1d pointer to next indecx in row
+        ptr1++; //move first 1d pointer to next index in row
         ptr2 = ptr1 + 1; //move second 1d pointer to one index after first 1d pointer
     }
     return 0; //return no error
